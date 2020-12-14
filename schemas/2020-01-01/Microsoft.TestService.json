@@ -1,0 +1,39 @@
+{
+  "id": "https://schema.management.azure.com/schemas/2020-01-01/Microsoft.TestService.json#",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Microsoft.TestService",
+  "description": "Microsoft TestService Resource Types",
+  "resourceDefinitions": {},
+  "tenant_resourceDefinitions": {
+    "test": {
+      "type": "object",
+      "properties": {
+        "apiVersion": {
+          "type": "string",
+          "enum": [
+            "2020-01-01"
+          ]
+        },
+        "name": {
+          "type": "string",
+          "enum": [
+            "test"
+          ]
+        },
+        "type": {
+          "type": "string",
+          "enum": [
+            "Microsoft.TestService/test"
+          ]
+        }
+      },
+      "required": [
+        "apiVersion",
+        "name",
+        "type"
+      ],
+      "description": "Microsoft.TestService/test"
+    }
+  },
+  "definitions": {}
+}
